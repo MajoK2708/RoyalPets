@@ -101,10 +101,10 @@ Properties			</td>
 <span class="TableContent Documentation"><head>
     
   </head>
-  <body style="color:#000000;margin-right:0;font-weight:normal;margin-left:0;font-size:12px;font-family:Dialog;">
-    <p style="margin-bottom:.0001pt;margin-right:0pt;margin-top:0pt;margin-left:0pt;">
-      Permite visualizar los servicios adicionales asociados a una cita, 
-      mostrando su informaci&#243;n detallada.
+  <body style="margin-left:0;color:#000000;font-weight:normal;margin-right:0;font-size:12px;font-family:Dialog;">
+    <p style="margin-left:0pt;margin-right:0pt;margin-top:0pt;margin-bottom:.0001pt;">
+      El cliente selecciona un servicio adicional y solicita su cancelaci&#243;n; 
+      el sistema valida la operaci&#243;n y actualiza el estado del servicio.
     </p>
   </body></span>			</td>
 		</tr>
@@ -168,7 +168,7 @@ Properties			</td>
 			<td>
 			</td>
 			<td>
-<span class="TableContent">Se implementa para consultar los servicios registrados y facilitar el control de la información.</span>			</td>
+<span class="TableContent">Permite al cliente cancelar un servicio adicional registrado cuando ya no lo requiere.</span>			</td>
 		</tr>
 		<tr class="TableRow2">
 			<td>
@@ -271,7 +271,7 @@ Relationships Summary			</td>
 				<span class="TableContent">
 					<div style="float: left; width: 18px !important;height: 18px !important;background-image:url(../images/icons/Association.png) !important; background-image:url(''); filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/icons/Association.png'); background-repeat: no-repeat; background-size: contain;">
 					</div>
-&nbsp;<a href="UseCase_wF_RvzmFYEDeIBrV.html#OZ93lrmFYEDcQROR" class="ItemLink"> : Association</a>				</span>
+&nbsp;<a href="UseCase_wF_RvzmFYEDeIBrV.html#OZF7trmFYEDcYRbN" class="ItemLink"> : Association</a>				</span>
 			</td>
 			<td class="TableCellSpaceHolder20Px">
 			</td>
@@ -340,127 +340,121 @@ Use Case Note			</td>
 			<td class="TableCellSpaceHolder10Px">
 			</td>
 			<td>
-<span class="TableContent">&nbsp;&nbsp;&nbsp;&nbsp;<span class="UseCaseNoteIndex">•</span> <i>Usuario ingresa al sistema y selecciona una cita/agendamiento.</i></span>			</td>
+<span class="TableContent">&nbsp;&nbsp;&nbsp;&nbsp;<span class="UseCaseNoteIndex">•</span> <i>Los actores inician sesión.</i></span>			</td>
 		</tr>
 		<tr class="TableRow2">
 			<td class="TableCellSpaceHolder10Px">
 			</td>
 			<td>
-<span class="TableContent">&nbsp;&nbsp;&nbsp;&nbsp;<span class="UseCaseNoteIndex">•</span> <i>Visualiza los servicios adicionales registrados.</i></span>			</td>
+<span class="TableContent">&nbsp;&nbsp;&nbsp;&nbsp;<span class="UseCaseNoteIndex">•</span> <i>Acceden al módulo de servicios adicionales.</i></span>			</td>
 		</tr>
 		<tr class="TableRow1">
 			<td class="TableCellSpaceHolder10Px">
 			</td>
 			<td>
-<span class="TableContent">&nbsp;&nbsp;&nbsp;&nbsp;<span class="UseCaseNoteIndex">•</span> <i>Selecciona el servicio adicional que desea cancelar.</i></span>			</td>
+<span class="TableContent">&nbsp;&nbsp;&nbsp;&nbsp;<span class="UseCaseNoteIndex">•</span> <i>Seleccionan un servicio.</i></span>			</td>
 		</tr>
 		<tr class="TableRow2">
 			<td class="TableCellSpaceHolder10Px">
 			</td>
 			<td>
-<span class="TableContent">&nbsp;&nbsp;&nbsp;&nbsp;<span class="UseCaseNoteIndex">•</span> <i>Presiona “Cancelar” y confirma la acción.</i></span>			</td>
+<span class="TableContent">&nbsp;&nbsp;&nbsp;&nbsp;<span class="UseCaseNoteIndex">•</span> <i>Cancelan el servicio.</i></span>			</td>
 		</tr>
 		<tr class="TableRow1">
-			<td class="TableCellSpaceHolder10Px">
-			</td>
-			<td>
-<span class="TableContent">&nbsp;&nbsp;&nbsp;&nbsp;<span class="UseCaseNoteIndex">•</span> <i>El sistema marca el servicio como cancelado y actualiza el costo total de la cita.</i></span>			</td>
-		</tr>
-		<tr class="TableRow2">
 			<td class="TableCellSpaceHolder10Px">
 			</td>
 			<td>
 <span class="TableContent"><span class="UseCaseNoteIndex">■</span> Business Logic</span>			</td>
 		</tr>
-		<tr class="TableRow1">
+		<tr class="TableRow2">
 			<td class="TableCellSpaceHolder10Px">
 			</td>
 			<td>
 <span class="TableContent">&nbsp;&nbsp;&nbsp;&nbsp;<span class="UseCaseNoteIndex">•</span> <i><span style="color: #5a9900">// Write down what user expect the system to react upon certain condition (e.g. low inventory alert level)</span></i></span>			</td>
 		</tr>
+		<tr class="TableRow1">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td>
+<span class="TableContent">&nbsp;&nbsp;&nbsp;&nbsp;<span class="UseCaseNoteIndex">•</span> <i>Solo se pueden cancelar servicios activos.</i></span>			</td>
+		</tr>
 		<tr class="TableRow2">
 			<td class="TableCellSpaceHolder10Px">
 			</td>
 			<td>
-<span class="TableContent">&nbsp;&nbsp;&nbsp;&nbsp;<span class="UseCaseNoteIndex">•</span> <i>El sistema solo permite cancelar servicios adicionales previamente registrados.</i></span>			</td>
+<span class="TableContent">&nbsp;&nbsp;&nbsp;&nbsp;<span class="UseCaseNoteIndex">•</span> <i>El servicio debe pertenecer al cliente autenticado.</i></span>			</td>
 		</tr>
 		<tr class="TableRow1">
 			<td class="TableCellSpaceHolder10Px">
 			</td>
 			<td>
-<span class="TableContent">&nbsp;&nbsp;&nbsp;&nbsp;<span class="UseCaseNoteIndex">•</span> <i>Solicita confirmación antes de ejecutar la cancelación.</i></span>			</td>
+<span class="TableContent">&nbsp;&nbsp;&nbsp;&nbsp;<span class="UseCaseNoteIndex">•</span> <i>El sistema debe cambiar el estado a “Cancelado”, no eliminar el registro.</i></span>			</td>
 		</tr>
 		<tr class="TableRow2">
 			<td class="TableCellSpaceHolder10Px">
 			</td>
 			<td>
-<span class="TableContent">&nbsp;&nbsp;&nbsp;&nbsp;<span class="UseCaseNoteIndex">•</span> <i>Actualiza automáticamente el costo total de la cita.</i></span>			</td>
+<span class="TableContent">&nbsp;&nbsp;&nbsp;&nbsp;<span class="UseCaseNoteIndex">•</span> <i>Puede aplicarse restricción de tiempo para cancelación (ej. antes de la fecha del servicio).</i></span>			</td>
 		</tr>
 		<tr class="TableRow1">
-			<td class="TableCellSpaceHolder10Px">
-			</td>
-			<td>
-<span class="TableContent">&nbsp;&nbsp;&nbsp;&nbsp;<span class="UseCaseNoteIndex">•</span> <i>Muestra mensaje de error si el servicio ya estaba cancelado o no existe.</i></span>			</td>
-		</tr>
-		<tr class="TableRow2">
 			<td class="TableCellSpaceHolder10Px">
 			</td>
 			<td>
 <span class="TableContent"><span class="UseCaseNoteIndex">■</span> Decisions</span>			</td>
 		</tr>
-		<tr class="TableRow1">
+		<tr class="TableRow2">
 			<td class="TableCellSpaceHolder10Px">
 			</td>
 			<td>
 <span class="TableContent">&nbsp;&nbsp;&nbsp;&nbsp;<span class="UseCaseNoteIndex">•</span> <i><span style="color: #5a9900">// Write down the decisions made during the meeting (e.g. Must allow accessing from mobile devices)</span></i></span>			</td>
 		</tr>
-		<tr class="TableRow2">
-			<td class="TableCellSpaceHolder10Px">
-			</td>
-			<td>
-<span class="TableContent">&nbsp;&nbsp;&nbsp;&nbsp;<span class="UseCaseNoteIndex">•</span> <i>Se permitirá cancelar solo servicios adicionales existentes.</i></span>			</td>
-		</tr>
 		<tr class="TableRow1">
 			<td class="TableCellSpaceHolder10Px">
 			</td>
 			<td>
-<span class="TableContent">&nbsp;&nbsp;&nbsp;&nbsp;<span class="UseCaseNoteIndex">•</span> <i>La cancelación se registrará en un historial de servicios para auditoría.</i></span>			</td>
+<span class="TableContent">&nbsp;&nbsp;&nbsp;&nbsp;<span class="UseCaseNoteIndex">•</span> <i>No se permite cancelar servicios ya realizados.</i></span>			</td>
 		</tr>
 		<tr class="TableRow2">
 			<td class="TableCellSpaceHolder10Px">
 			</td>
 			<td>
-<span class="TableContent">&nbsp;&nbsp;&nbsp;&nbsp;<span class="UseCaseNoteIndex">•</span> <i>Se notificará al usuario sobre la cancelación exitosa.</i></span>			</td>
+<span class="TableContent">&nbsp;&nbsp;&nbsp;&nbsp;<span class="UseCaseNoteIndex">•</span> <i>Se solicita confirmación antes de cancelar.</i></span>			</td>
 		</tr>
 		<tr class="TableRow1">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td>
+<span class="TableContent">&nbsp;&nbsp;&nbsp;&nbsp;<span class="UseCaseNoteIndex">•</span> <i>El sistema registra la fecha de cancelación.</i></span>			</td>
+		</tr>
+		<tr class="TableRow2">
 			<td class="TableCellSpaceHolder10Px">
 			</td>
 			<td>
 <span class="TableContent"><span class="UseCaseNoteIndex">■</span> Follow-up</span>			</td>
 		</tr>
-		<tr class="TableRow2">
+		<tr class="TableRow1">
 			<td class="TableCellSpaceHolder10Px">
 			</td>
 			<td>
 <span class="TableContent">&nbsp;&nbsp;&nbsp;&nbsp;<span class="UseCaseNoteIndex">•</span> <i><span style="color: #5a9900">// Write down the items that should follow-up in the coming meeting</span></i></span>			</td>
 		</tr>
+		<tr class="TableRow2">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td>
+<span class="TableContent">&nbsp;&nbsp;&nbsp;&nbsp;<span class="UseCaseNoteIndex">•</span> <i>Notificar al cliente sobre la cancelación.</i></span>			</td>
+		</tr>
 		<tr class="TableRow1">
 			<td class="TableCellSpaceHolder10Px">
 			</td>
 			<td>
-<span class="TableContent">&nbsp;&nbsp;&nbsp;&nbsp;<span class="UseCaseNoteIndex">•</span> <i>Evaluar la integración de la cancelación con facturación y reportes.</i></span>			</td>
+<span class="TableContent">&nbsp;&nbsp;&nbsp;&nbsp;<span class="UseCaseNoteIndex">•</span> <i>Liberar espacio en agenda si aplica.</i></span>			</td>
 		</tr>
 		<tr class="TableRow2">
 			<td class="TableCellSpaceHolder10Px">
 			</td>
 			<td>
-<span class="TableContent">&nbsp;&nbsp;&nbsp;&nbsp;<span class="UseCaseNoteIndex">•</span> <i>Mejorar interfaz de confirmación para evitar cancelaciones accidentales.</i></span>			</td>
-		</tr>
-		<tr class="TableRow1">
-			<td class="TableCellSpaceHolder10Px">
-			</td>
-			<td>
-<span class="TableContent">&nbsp;&nbsp;&nbsp;&nbsp;<span class="UseCaseNoteIndex">•</span> <i>Definir reglas para restaurar servicios cancelados si es necesario.</i></span>			</td>
+<span class="TableContent">&nbsp;&nbsp;&nbsp;&nbsp;<span class="UseCaseNoteIndex">•</span> <i>Registrar motivo de cancelación.</i></span>			</td>
 		</tr>
 	</table>
 	<table border="0" cellpadding="0" width="100%" cellspacing="0">
@@ -510,55 +504,115 @@ Scenario			</td>
 			<td class="TableCellSpaceHolder10Px">
 			</td>
 			<td>
-<span class="TableContent"><span class="FoeIndex">1.</span> Los actores ingresa al aplicativo web.</span>			</td>
+<span class="TableContent"><span class="FoeIndex">1.</span> El actor accede al sistema mediante sus credenciales.</span>			</td>
 		</tr>
 		<tr class="TableRow2">
 			<td class="TableCellSpaceHolder10Px">
 			</td>
 			<td>
-<span class="TableContent"><span class="FoeIndex">2.</span> Selecciona una cita/agendamiento.</span>			</td>
+<span class="TableContent"><span class="FoeIndex">2.</span> El sistema valida las credenciales del actor.</span>			</td>
 		</tr>
 		<tr class="TableRow1">
 			<td class="TableCellSpaceHolder10Px">
 			</td>
 			<td>
-<span class="TableContent"><span class="FoeIndex">3.</span> El sistema muestra los servicios adicionales registrados.</span>			</td>
+<span class="TableContent"><span class="FoeIndex">3.</span> El actor ingresa al módulo “Servicios adicionales”.</span>			</td>
 		</tr>
 		<tr class="TableRow2">
 			<td class="TableCellSpaceHolder10Px">
 			</td>
 			<td>
-<span class="TableContent"><span class="FoeIndex">4.</span> <span class="FoeControl">if</span> </span>			</td>
+<span class="TableContent"><span class="FoeIndex">4.</span> El sistema muestra el listado de servicios adicionales registrados.</span>			</td>
 		</tr>
 		<tr class="TableRow1">
 			<td class="TableCellSpaceHolder10Px">
 			</td>
 			<td>
-<span class="TableContent">&nbsp;&nbsp;&nbsp;&nbsp;<span class="FoeIndex">4.1.</span> El usuario selecciona un servicio adicional.</span>			</td>
+<span class="TableContent"><span class="FoeIndex">5.</span> El actor selecciona el servicio adicional que desea cancelar.</span>			</td>
 		</tr>
 		<tr class="TableRow2">
 			<td class="TableCellSpaceHolder10Px">
 			</td>
 			<td>
-<span class="TableContent">&nbsp;&nbsp;&nbsp;&nbsp;<span class="FoeIndex">4.2.</span> El sistema muestra el detalle del servicio.</span>			</td>
+<span class="TableContent"><span class="FoeIndex">6.</span> El sistema muestra la información del servicio.</span>			</td>
 		</tr>
 		<tr class="TableRow1">
 			<td class="TableCellSpaceHolder10Px">
 			</td>
 			<td>
-<span class="TableContent"><span class="FoeIndex">5.</span> <span class="FoeControl">else</span> </span>			</td>
+<span class="TableContent"><span class="FoeIndex">7.</span> El actor selecciona la opción “Cancelar servicio”.</span>			</td>
 		</tr>
 		<tr class="TableRow2">
 			<td class="TableCellSpaceHolder10Px">
 			</td>
 			<td>
-<span class="TableContent">&nbsp;&nbsp;&nbsp;&nbsp;<span class="FoeIndex">5.1.</span> 5.1. El sistema muestra mensaje indicando que no existen servicios adicionales.</span>			</td>
+<span class="TableContent"><span class="FoeIndex">8.</span> El sistema solicita confirmación de la acción.</span>			</td>
 		</tr>
 		<tr class="TableRow1">
 			<td class="TableCellSpaceHolder10Px">
 			</td>
 			<td>
-<span class="TableContent">&nbsp;&nbsp; <span class="FoeControl">end if</span></span>			</td>
+<span class="TableContent"><span class="FoeIndex">9.</span> <span class="FoeControl">if</span> El actor confirma la cancelación.</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td>
+<span class="TableContent">&nbsp;&nbsp;&nbsp;&nbsp;<span class="FoeIndex">9.1.</span> El sistema valida que el servicio esté en estado activo.</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td>
+<span class="TableContent">&nbsp;&nbsp;&nbsp;&nbsp;<span class="FoeIndex">9.2.</span> El sistema verifica que el servicio pertenezca al actor.</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td>
+<span class="TableContent">&nbsp;&nbsp;&nbsp;&nbsp;<span class="FoeIndex">9.3.</span> El sistema actualiza el estado del servicio a “Cancelado”.</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td>
+<span class="TableContent">&nbsp;&nbsp;&nbsp;&nbsp;<span class="FoeIndex">9.4.</span> El sistema registra la fecha de cancelación.</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td>
+<span class="TableContent">&nbsp;&nbsp;&nbsp;&nbsp;<span class="FoeIndex">9.5.</span> El sistema muestra un mensaje: "Servicio adicional cancelado exitosamente".</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td>
+<span class="TableContent">&nbsp;&nbsp;&nbsp;&nbsp;<span class="FoeIndex">9.6.</span> El actor visualiza el estado actualizado en el listado.</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td>
+<span class="TableContent"><span class="FoeIndex">10.</span> <span class="FoeControl">else</span> </span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td>
+<span class="TableContent">&nbsp;&nbsp;&nbsp;&nbsp;<span class="FoeIndex">10.1.</span> El sistema muestra un mensaje: "No se pudo cancelar el servicio".</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td>
+<span class="TableContent">&nbsp;&nbsp;&nbsp;&nbsp;<span class="FoeIndex">10.2.</span> El actor puede volver al listado sin realizar cambios.</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td>
+<span class="TableContent">&nbsp;&nbsp;&nbsp; <span class="FoeControl">end if</span></span>			</td>
 		</tr>
 	</table>
 	<table border="0" cellpadding="0" width="100%" cellspacing="0">
@@ -711,7 +765,7 @@ Relationships Detail			</td>
 			</td>
 		</tr>
 	</table>
-<a name="OZ93lrmFYEDcQROR"></a>	<table border="0" cellpadding="0" width="100%" cellspacing="0">
+<a name="OZF7trmFYEDcYRbN"></a>	<table border="0" cellpadding="0" width="100%" cellspacing="0">
 		<tr>
 			<td colSpan="4" class="TableHeaderLine">
 			</td>

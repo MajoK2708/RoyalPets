@@ -101,10 +101,11 @@ Properties			</td>
 <span class="TableContent Documentation"><head>
     
   </head>
-  <body style="color:#000000;margin-right:0;font-weight:normal;margin-left:0;font-size:12px;font-family:Dialog;">
-    <p style="margin-bottom:.0001pt;margin-right:0pt;margin-top:0pt;margin-left:0pt;">
-      Verifica que las credenciales ingresadas por el usuario sean correctas y 
-      esten registradas en el sistema.
+  <body style="margin-left:0;color:#000000;font-weight:normal;margin-right:0;font-size:12px;font-family:Dialog;">
+    <p style="margin-left:0pt;margin-right:0pt;margin-top:0pt;margin-bottom:.0001pt;">
+      Cuando un usuario ingresa datos (por ejemplo, al registrar un servicio, 
+      un usuario o un rol), el sistema valida los campos obligatorios, 
+      formatos y consistencia, mostrando errores si es necesario.
     </p>
   </body></span>			</td>
 		</tr>
@@ -168,7 +169,7 @@ Properties			</td>
 			<td>
 			</td>
 			<td>
-<span class="TableContent">evita el acceso no autorizado y asegura la intregridad de la información </span>			</td>
+<span class="TableContent">Permite al sistema verificar que la información ingresada por un usuario cumpla con los formatos y requisitos necesarios antes de almacenarla.</span>			</td>
 		</tr>
 		<tr class="TableRow2">
 			<td>
@@ -277,6 +278,276 @@ Relationships Summary			</td>
 					</div>
 &nbsp;<a href="UseCase_SorKkjmFYEDK1gwz.html" class="ItemLink">Validar datos : Use Case</a>				</span>
 			</td>
+		</tr>
+	</table>
+	<table border="0" cellpadding="0" width="100%" cellspacing="0">
+		<tr>
+			<td class="TableCellSpaceHolder1PxTall">
+			</td>
+		</tr>
+		<tr>
+			<td class="TableFooter">
+			</td>
+		</tr>
+	</table>
+	<p>
+	</p>
+	<p>
+	</p>
+	<table border="0" cellpadding="0" width="100%" cellspacing="0">
+		<tr>
+			<td class="Category">
+Use Case Note			</td>
+		</tr>
+		<tr>
+			<td class="TableCellSpaceHolder5PxTall">
+			</td>
+		</tr>
+	</table>
+	<table border="0" cellpadding="0" width="100%" cellspacing="0">
+		<tr>
+			<td colSpan="4" class="TableHeaderLine">
+			</td>
+		</tr>
+		<tr>
+			<td colSpan="4" class="TableHeaderLine1">
+			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td>
+<span class="TableContent"><span class="UseCaseNoteIndex">■</span> Workflow</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td>
+<span class="TableContent">&nbsp;&nbsp;&nbsp;&nbsp;<span class="UseCaseNoteIndex">•</span> <i><span style="color: #5a9900">// Write down briefly how user perform the work</span></i></span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td>
+<span class="TableContent">&nbsp;&nbsp;&nbsp;&nbsp;<span class="UseCaseNoteIndex">•</span> <i>El usuario ingresa datos en un formulario.</i></span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td>
+<span class="TableContent">&nbsp;&nbsp;&nbsp;&nbsp;<span class="UseCaseNoteIndex">•</span> <i>El sistema realiza validaciones automáticas.</i></span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td>
+<span class="TableContent">&nbsp;&nbsp;&nbsp;&nbsp;<span class="UseCaseNoteIndex">•</span> <i>El sistema informa si los datos son correctos o muestra errores.</i></span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td>
+<span class="TableContent"><span class="UseCaseNoteIndex">■</span> Business Logic</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td>
+<span class="TableContent">&nbsp;&nbsp;&nbsp;&nbsp;<span class="UseCaseNoteIndex">•</span> <i><span style="color: #5a9900">// Write down what user expect the system to react upon certain condition (e.g. low inventory alert level)</span></i></span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td>
+<span class="TableContent">&nbsp;&nbsp;&nbsp;&nbsp;<span class="UseCaseNoteIndex">•</span> <i>Los campos obligatorios no pueden quedar vacíos.</i></span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td>
+<span class="TableContent">&nbsp;&nbsp;&nbsp;&nbsp;<span class="UseCaseNoteIndex">•</span> <i>Se valida formato de correo, número de documento y fechas.</i></span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td>
+<span class="TableContent">&nbsp;&nbsp;&nbsp;&nbsp;<span class="UseCaseNoteIndex">•</span> <i>Se verifica consistencia con datos existentes (por ejemplo, que la mascota exista antes de registrar un servicio).</i></span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td>
+<span class="TableContent"><span class="UseCaseNoteIndex">■</span> Decisions</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td>
+<span class="TableContent">&nbsp;&nbsp;&nbsp;&nbsp;<span class="UseCaseNoteIndex">•</span> <i><span style="color: #5a9900">// Write down the decisions made during the meeting (e.g. Must allow accessing from mobile devices)</span></i></span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td>
+<span class="TableContent">&nbsp;&nbsp;&nbsp;&nbsp;<span class="UseCaseNoteIndex">•</span> <i>Validación puede ocurrir en tiempo real o al enviar formulario.</i></span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td>
+<span class="TableContent">&nbsp;&nbsp;&nbsp;&nbsp;<span class="UseCaseNoteIndex">•</span> <i>Los errores se muestran inmediatamente al usuario.</i></span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td>
+<span class="TableContent">&nbsp;&nbsp;&nbsp;&nbsp;<span class="UseCaseNoteIndex">•</span> <i>Si hay inconsistencias, no se guarda la información hasta que se corrija.</i></span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td>
+<span class="TableContent"><span class="UseCaseNoteIndex">■</span> Follow-up</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td>
+<span class="TableContent">&nbsp;&nbsp;&nbsp;&nbsp;<span class="UseCaseNoteIndex">•</span> <i><span style="color: #5a9900">// Write down the items that should follow-up in the coming meeting</span></i></span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td>
+<span class="TableContent">&nbsp;&nbsp;&nbsp;&nbsp;<span class="UseCaseNoteIndex">•</span> <i>Permitir reintentos de ingreso de datos.</i></span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td>
+<span class="TableContent">&nbsp;&nbsp;&nbsp;&nbsp;<span class="UseCaseNoteIndex">•</span> <i>Registrar intentos fallidos de ingreso para auditoría.</i></span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td>
+<span class="TableContent">&nbsp;&nbsp;&nbsp;&nbsp;<span class="UseCaseNoteIndex">•</span> <i>Reutilizar este caso de uso en otros procesos que requieran validación.</i></span>			</td>
+		</tr>
+	</table>
+	<table border="0" cellpadding="0" width="100%" cellspacing="0">
+		<tr>
+			<td class="TableCellSpaceHolder1PxTall">
+			</td>
+		</tr>
+		<tr>
+			<td class="TableFooter">
+			</td>
+		</tr>
+	</table>
+	<p>
+	</p>
+	<p>
+	</p>
+	<table border="0" cellpadding="0" width="100%" cellspacing="0">
+		<tr>
+			<td class="Category">
+Scenario			</td>
+		</tr>
+		<tr>
+			<td class="TableCellSpaceHolder5PxTall">
+			</td>
+		</tr>
+	</table>
+	<table border="0" cellpadding="0" width="100%" cellspacing="0">
+		<tr>
+			<td colSpan="4" class="TableHeaderLine">
+			</td>
+		</tr>
+		<tr>
+			<td colSpan="4" class="TableHeaderLine1">
+			</td>
+		</tr>
+		<tr class="TableHeader">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td>
+<span class="TableHeaderText">Steps</span>			</td>
+		</tr>
+		<tr>
+			<td colSpan="2" class="TableHeaderLine2">
+			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td>
+<span class="TableContent"><span class="FoeIndex">1.</span> El usuario ingresa datos en un formulario del sistema.</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td>
+<span class="TableContent"><span class="FoeIndex">2.</span> El sistema recibe la información y comienza la validación.</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td>
+<span class="TableContent"><span class="FoeIndex">3.</span> <span class="FoeControl">if</span> Todos los campos obligatorios están completos.</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td>
+<span class="TableContent">&nbsp;&nbsp;&nbsp;&nbsp;<span class="FoeIndex">3.1.</span> Los formatos son correctos (correo, fecha, números, etc.).</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td>
+<span class="TableContent">&nbsp;&nbsp;&nbsp;&nbsp;<span class="FoeIndex">3.2.</span> La información es consistente con datos existentes en la base de datos.</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td>
+<span class="TableContent">&nbsp;&nbsp;&nbsp;&nbsp;<span class="FoeIndex">3.3.</span> El sistema marca los datos como válidos.</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td>
+<span class="TableContent">&nbsp;&nbsp;&nbsp;&nbsp;<span class="FoeIndex">3.4.</span> El usuario puede continuar con el siguiente paso (guardar, enviar o registrar).</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td>
+<span class="TableContent"><span class="FoeIndex">4.</span> <span class="FoeControl">else</span> </span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td>
+<span class="TableContent">&nbsp;&nbsp;&nbsp;&nbsp;<span class="FoeIndex">4.1.</span> El sistema muestra mensajes de error indicando los campos inválidos o inconsistentes.</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td>
+<span class="TableContent">&nbsp;&nbsp;&nbsp;&nbsp;<span class="FoeIndex">4.2.</span> El usuario corrige la información.</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td>
+<span class="TableContent">&nbsp;&nbsp;&nbsp;&nbsp;<span class="FoeIndex">4.3.</span> El sistema vuelve a validar los datos.</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td>
+<span class="TableContent">&nbsp;&nbsp; <span class="FoeControl">end if</span></span>			</td>
 		</tr>
 	</table>
 	<table border="0" cellpadding="0" width="100%" cellspacing="0">

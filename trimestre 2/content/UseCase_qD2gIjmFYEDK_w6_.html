@@ -101,8 +101,8 @@ Properties			</td>
 <span class="TableContent Documentation"><head>
     
   </head>
-  <body style="color:#000000;margin-right:0;font-weight:normal;margin-left:0;font-size:12px;font-family:Dialog;">
-    <p style="margin-bottom:.0001pt;margin-right:0pt;margin-top:0pt;margin-left:0pt;">
+  <body style="margin-left:0;color:#000000;font-weight:normal;margin-right:0;font-size:12px;font-family:Dialog;">
+    <p style="margin-left:0pt;margin-right:0pt;margin-top:0pt;margin-bottom:.0001pt;">
       Define el rol del usuario (Veterinario,Adimistrador o cliente ), al 
       momento del registro
     </p>
@@ -487,6 +487,170 @@ Use Case Note			</td>
 			</td>
 			<td>
 <span class="TableContent">&nbsp;&nbsp;&nbsp;&nbsp;<span class="UseCaseNoteIndex">•</span> <i>¿Se notificará al usuario cuando su rol sea cambiado?</i></span>			</td>
+		</tr>
+	</table>
+	<table border="0" cellpadding="0" width="100%" cellspacing="0">
+		<tr>
+			<td class="TableCellSpaceHolder1PxTall">
+			</td>
+		</tr>
+		<tr>
+			<td class="TableFooter">
+			</td>
+		</tr>
+	</table>
+	<p>
+	</p>
+	<p>
+	</p>
+	<table border="0" cellpadding="0" width="100%" cellspacing="0">
+		<tr>
+			<td class="Category">
+Scenario			</td>
+		</tr>
+		<tr>
+			<td class="TableCellSpaceHolder5PxTall">
+			</td>
+		</tr>
+	</table>
+	<table border="0" cellpadding="0" width="100%" cellspacing="0">
+		<tr>
+			<td colSpan="4" class="TableHeaderLine">
+			</td>
+		</tr>
+		<tr>
+			<td colSpan="4" class="TableHeaderLine1">
+			</td>
+		</tr>
+		<tr class="TableHeader">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td>
+<span class="TableHeaderText">Steps</span>			</td>
+		</tr>
+		<tr>
+			<td colSpan="2" class="TableHeaderLine2">
+			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td>
+<span class="TableContent"><span class="FoeIndex">1.</span> El administrador accede al sistema mediante sus credenciales.</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td>
+<span class="TableContent"><span class="FoeIndex">2.</span> El sistema valida las credenciales del actor.</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td>
+<span class="TableContent"><span class="FoeIndex">3.</span> El administrador ingresa al módulo “Usuarios”.</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td>
+<span class="TableContent"><span class="FoeIndex">4.</span> El sistema muestra el listado de usuarios registrados.</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td>
+<span class="TableContent"><span class="FoeIndex">5.</span> El administrador selecciona el usuario al que desea asignar un rol.</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td>
+<span class="TableContent"><span class="FoeIndex">6.</span> El sistema muestra la información del usuario.</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td>
+<span class="TableContent"><span class="FoeIndex">7.</span> El administrador selecciona la opción “Asignar rol”.</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td>
+<span class="TableContent"><span class="FoeIndex">8.</span> El sistema muestra los roles disponibles.</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td>
+<span class="TableContent"><span class="FoeIndex">9.</span> El administrador selecciona el rol a asignar.</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td>
+<span class="TableContent"><span class="FoeIndex">10.</span> <span class="FoeControl">if</span> El Administrador tiene permisos válidos.</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td>
+<span class="TableContent">&nbsp;&nbsp;&nbsp;&nbsp;<span class="FoeIndex">10.1.</span> El sistema valida el rol seleccionado.</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td>
+<span class="TableContent">&nbsp;&nbsp;&nbsp;&nbsp;<span class="FoeIndex">10.2.</span> El sistema asigna el rol al usuario.</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td>
+<span class="TableContent">&nbsp;&nbsp;&nbsp;&nbsp;<span class="FoeIndex">10.3.</span> El sistema actualiza la información en la base de datos.</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td>
+<span class="TableContent">&nbsp;&nbsp;&nbsp;&nbsp;<span class="FoeIndex">10.4.</span> El sistema muestra un mensaje: "Rol asignado exitosamente".</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td>
+<span class="TableContent">&nbsp;&nbsp;&nbsp;&nbsp;<span class="FoeIndex">10.5.</span> El Administrador visualiza el rol actualizado en el perfil del usuario.</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td>
+<span class="TableContent"><span class="FoeIndex">11.</span> <span class="FoeControl">else</span> </span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td>
+<span class="TableContent">&nbsp;&nbsp;&nbsp;&nbsp;<span class="FoeIndex">11.1.</span> El sistema muestra un mensaje: "No tiene permisos para asignar roles".</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td>
+<span class="TableContent">&nbsp;&nbsp;&nbsp;&nbsp;<span class="FoeIndex">11.2.</span> El Administrador no puede continuar con la acción.</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td>
+<span class="TableContent">&nbsp;&nbsp;&nbsp;&nbsp;<span class="FoeIndex">11.3.</span> end if</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td>
+<span class="TableContent">&nbsp;&nbsp;&nbsp; <span class="FoeControl">end if</span></span>			</td>
 		</tr>
 	</table>
 	<table border="0" cellpadding="0" width="100%" cellspacing="0">

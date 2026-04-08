@@ -101,10 +101,10 @@ Properties			</td>
 <span class="TableContent Documentation"><head>
     
   </head>
-  <body style="color:#000000;margin-right:0;font-weight:normal;margin-left:0;font-size:12px;font-family:Dialog;">
-    <p data-end="224" data-start="104" style="margin-bottom:.0001pt;margin-right:0pt;margin-top:0pt;margin-left:0pt;">
-      Permite visualizar los servicios adicionales registrados en una cita, 
-      mostrando informaci&#243;n como tipo, costo y detalles.
+  <body style="margin-left:0;color:#000000;font-weight:normal;margin-right:0;font-size:12px;font-family:Dialog;">
+    <p style="margin-left:0pt;margin-right:0pt;margin-top:0pt;margin-bottom:.0001pt;">
+      El cliente accede al m&#243;dulo de servicios adicionales, selecciona un 
+      servicio y el sistema muestra su informaci&#243;n detallada.
     </p>
   </body></span>			</td>
 		</tr>
@@ -168,7 +168,7 @@ Properties			</td>
 			<td>
 			</td>
 			<td>
-<span class="TableContent">Se implementa para consultar los servicios asociados a una cita y mantener control de la información registrada.</span>			</td>
+<span class="TableContent">Permite al cliente consultar la información de un servicio adicional registrado para su mascota.</span>			</td>
 		</tr>
 		<tr class="TableRow2">
 			<td>
@@ -271,7 +271,7 @@ Relationships Summary			</td>
 				<span class="TableContent">
 					<div style="float: left; width: 18px !important;height: 18px !important;background-image:url(../images/icons/Association.png) !important; background-image:url(''); filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/icons/Association.png'); background-repeat: no-repeat; background-size: contain;">
 					</div>
-&nbsp;<a href="UseCase_iC3RvzmFYEDeIBq4.html#JBt3lrmFYEDcQROD" class="ItemLink"> : Association</a>				</span>
+&nbsp;<a href="UseCase_iC3RvzmFYEDeIBq4.html#5J57trmFYEDcYRa9" class="ItemLink"> : Association</a>				</span>
 			</td>
 			<td class="TableCellSpaceHolder20Px">
 			</td>
@@ -340,61 +340,49 @@ Use Case Note			</td>
 			<td class="TableCellSpaceHolder10Px">
 			</td>
 			<td>
-<span class="TableContent">&nbsp;&nbsp;&nbsp;&nbsp;<span class="UseCaseNoteIndex">•</span> <i>Usuarios accede al sistema.</i></span>			</td>
+<span class="TableContent">&nbsp;&nbsp;&nbsp;&nbsp;<span class="UseCaseNoteIndex">•</span> <i>Los actores inician sesión.</i></span>			</td>
 		</tr>
 		<tr class="TableRow2">
 			<td class="TableCellSpaceHolder10Px">
 			</td>
 			<td>
-<span class="TableContent">&nbsp;&nbsp;&nbsp;&nbsp;<span class="UseCaseNoteIndex">•</span> <i>Selecciona una cita/agendamiento.</i></span>			</td>
+<span class="TableContent">&nbsp;&nbsp;&nbsp;&nbsp;<span class="UseCaseNoteIndex">•</span> <i>Acceden al módulo de servicios adicionales.</i></span>			</td>
 		</tr>
 		<tr class="TableRow1">
 			<td class="TableCellSpaceHolder10Px">
 			</td>
 			<td>
-<span class="TableContent">&nbsp;&nbsp;&nbsp;&nbsp;<span class="UseCaseNoteIndex">•</span> <i>Visualiza la lista de servicios adicionales registrados.</i></span>			</td>
+<span class="TableContent">&nbsp;&nbsp;&nbsp;&nbsp;<span class="UseCaseNoteIndex">•</span> <i>Consultan un servicio específico.</i></span>			</td>
 		</tr>
 		<tr class="TableRow2">
-			<td class="TableCellSpaceHolder10Px">
-			</td>
-			<td>
-<span class="TableContent">&nbsp;&nbsp;&nbsp;&nbsp;<span class="UseCaseNoteIndex">•</span> <i>Consulta los detalles de un servicio adicional.</i></span>			</td>
-		</tr>
-		<tr class="TableRow1">
 			<td class="TableCellSpaceHolder10Px">
 			</td>
 			<td>
 <span class="TableContent"><span class="UseCaseNoteIndex">■</span> Business Logic</span>			</td>
 		</tr>
-		<tr class="TableRow2">
+		<tr class="TableRow1">
 			<td class="TableCellSpaceHolder10Px">
 			</td>
 			<td>
 <span class="TableContent">&nbsp;&nbsp;&nbsp;&nbsp;<span class="UseCaseNoteIndex">•</span> <i><span style="color: #5a9900">// Write down what user expect the system to react upon certain condition (e.g. low inventory alert level)</span></i></span>			</td>
 		</tr>
-		<tr class="TableRow1">
-			<td class="TableCellSpaceHolder10Px">
-			</td>
-			<td>
-<span class="TableContent">&nbsp;&nbsp;&nbsp;&nbsp;<span class="UseCaseNoteIndex">•</span> <i>El sistema muestra los servicios adicionales asociados a la cita.</i></span>			</td>
-		</tr>
 		<tr class="TableRow2">
 			<td class="TableCellSpaceHolder10Px">
 			</td>
 			<td>
-<span class="TableContent">&nbsp;&nbsp;&nbsp;&nbsp;<span class="UseCaseNoteIndex">•</span> <i>Permite visualizar información como tipo, costo y descripción.</i></span>			</td>
+<span class="TableContent">&nbsp;&nbsp;&nbsp;&nbsp;<span class="UseCaseNoteIndex">•</span> <i>Solo se pueden consultar servicios registrados.</i></span>			</td>
 		</tr>
 		<tr class="TableRow1">
 			<td class="TableCellSpaceHolder10Px">
 			</td>
 			<td>
-<span class="TableContent">&nbsp;&nbsp;&nbsp;&nbsp;<span class="UseCaseNoteIndex">•</span> <i>Solo usuarios autorizados pueden acceder a la información.</i></span>			</td>
+<span class="TableContent">&nbsp;&nbsp;&nbsp;&nbsp;<span class="UseCaseNoteIndex">•</span> <i>El servicio debe pertenecer al cliente autenticado.</i></span>			</td>
 		</tr>
 		<tr class="TableRow2">
 			<td class="TableCellSpaceHolder10Px">
 			</td>
 			<td>
-<span class="TableContent">&nbsp;&nbsp;&nbsp;&nbsp;<span class="UseCaseNoteIndex">•</span> <i>Muestra mensaje si no existen servicios adicionales registrados.</i></span>			</td>
+<span class="TableContent">&nbsp;&nbsp;&nbsp;&nbsp;<span class="UseCaseNoteIndex">•</span> <i>El sistema debe mostrar información completa del servicio.</i></span>			</td>
 		</tr>
 		<tr class="TableRow1">
 			<td class="TableCellSpaceHolder10Px">
@@ -412,37 +400,49 @@ Use Case Note			</td>
 			<td class="TableCellSpaceHolder10Px">
 			</td>
 			<td>
-<span class="TableContent">&nbsp;&nbsp;&nbsp;&nbsp;<span class="UseCaseNoteIndex">•</span> <i>Se permitirá visualizar todos los servicios asociados a una cita.</i></span>			</td>
+<span class="TableContent">&nbsp;&nbsp;&nbsp;&nbsp;<span class="UseCaseNoteIndex">•</span> <i>Se permite búsqueda por filtros (tipo de servicio, fecha).</i></span>			</td>
 		</tr>
 		<tr class="TableRow2">
 			<td class="TableCellSpaceHolder10Px">
 			</td>
 			<td>
-<span class="TableContent">&nbsp;&nbsp;&nbsp;&nbsp;<span class="UseCaseNoteIndex">•</span> <i>La información se mostrará en una lista clara y ordenada.</i></span>			</td>
+<span class="TableContent">&nbsp;&nbsp;&nbsp;&nbsp;<span class="UseCaseNoteIndex">•</span> <i>Se restringe el acceso a servicios de otros usuarios.</i></span>			</td>
 		</tr>
 		<tr class="TableRow1">
 			<td class="TableCellSpaceHolder10Px">
 			</td>
 			<td>
-<span class="TableContent">&nbsp;&nbsp;&nbsp;&nbsp;<span class="UseCaseNoteIndex">•</span> <i>Acceso disponible según rol de usuario.</i></span>			</td>
+<span class="TableContent">&nbsp;&nbsp;&nbsp;&nbsp;<span class="UseCaseNoteIndex">•</span> <i>La información se muestra en modo solo lectura.</i></span>			</td>
 		</tr>
 		<tr class="TableRow2">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td>
+<span class="TableContent">&nbsp;&nbsp;&nbsp;&nbsp;<span class="UseCaseNoteIndex">•</span> <i>Agregar opción de descarga en PDF la información del servicio adicional.</i></span>			</td>
+		</tr>
+		<tr class="TableRow1">
 			<td class="TableCellSpaceHolder10Px">
 			</td>
 			<td>
 <span class="TableContent"><span class="UseCaseNoteIndex">■</span> Follow-up</span>			</td>
 		</tr>
-		<tr class="TableRow1">
+		<tr class="TableRow2">
 			<td class="TableCellSpaceHolder10Px">
 			</td>
 			<td>
 <span class="TableContent">&nbsp;&nbsp;&nbsp;&nbsp;<span class="UseCaseNoteIndex">•</span> <i><span style="color: #5a9900">// Write down the items that should follow-up in the coming meeting</span></i></span>			</td>
 		</tr>
+		<tr class="TableRow1">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td>
+<span class="TableContent">&nbsp;&nbsp;&nbsp;&nbsp;<span class="UseCaseNoteIndex">•</span> <i>Permitir exportar la información del servicio.</i></span>			</td>
+		</tr>
 		<tr class="TableRow2">
 			<td class="TableCellSpaceHolder10Px">
 			</td>
 			<td>
-<span class="TableContent">&nbsp;&nbsp;&nbsp;&nbsp;<span class="UseCaseNoteIndex">•</span> <i></i></span>			</td>
+<span class="TableContent">&nbsp;&nbsp;&nbsp;&nbsp;<span class="UseCaseNoteIndex">•</span> <i>Integrar historial de servicios por mascota.</i></span>			</td>
 		</tr>
 	</table>
 	<table border="0" cellpadding="0" width="100%" cellspacing="0">
@@ -492,51 +492,117 @@ Scenario			</td>
 			<td class="TableCellSpaceHolder10Px">
 			</td>
 			<td>
-<span class="TableContent"><span class="FoeIndex">1.</span> Los actores ingresa al aplicativo web.</span>			</td>
+<span class="TableContent"><span class="FoeIndex">1.</span> El actor accede al sistema mediante sus credenciales.</span>			</td>
 		</tr>
 		<tr class="TableRow2">
 			<td class="TableCellSpaceHolder10Px">
 			</td>
 			<td>
-<span class="TableContent"><span class="FoeIndex">2.</span> Los actores selecciona una cita/agendamiento.</span>			</td>
+<span class="TableContent"><span class="FoeIndex">2.</span> El sistema valida las credenciales del actor.</span>			</td>
 		</tr>
 		<tr class="TableRow1">
 			<td class="TableCellSpaceHolder10Px">
 			</td>
 			<td>
-<span class="TableContent"><span class="FoeIndex">3.</span> El sistema muestra los servicios adicionales registrados.</span>			</td>
+<span class="TableContent"><span class="FoeIndex">3.</span> El actor ingresa al módulo “Servicios adicionales”.</span>			</td>
 		</tr>
 		<tr class="TableRow2">
 			<td class="TableCellSpaceHolder10Px">
 			</td>
 			<td>
-<span class="TableContent"><span class="FoeIndex">4.</span> <span class="FoeControl">if</span> </span>			</td>
+<span class="TableContent"><span class="FoeIndex">4.</span> El sistema muestra el listado de servicios adicionales registrados.</span>			</td>
 		</tr>
 		<tr class="TableRow1">
 			<td class="TableCellSpaceHolder10Px">
 			</td>
 			<td>
-<span class="TableContent">&nbsp;&nbsp;&nbsp;&nbsp;<span class="FoeIndex">4.1.</span> 4.1. Los usuarios selecciona un servicio adicional.</span>			</td>
+<span class="TableContent"><span class="FoeIndex">5.</span> El actor utiliza los filtros de búsqueda disponibles (tipo de servicio, fecha).</span>			</td>
 		</tr>
 		<tr class="TableRow2">
 			<td class="TableCellSpaceHolder10Px">
 			</td>
 			<td>
-<span class="TableContent">&nbsp;&nbsp;&nbsp;&nbsp;<span class="FoeIndex">4.2.</span> 4.2. El sistema muestra el detalle del servicio adicional.</span>			</td>
+<span class="TableContent"><span class="FoeIndex">6.</span> <span class="FoeControl">if</span> El actor selecciona el servicio adicional que desea consultar o leer.</span>			</td>
 		</tr>
 		<tr class="TableRow1">
 			<td class="TableCellSpaceHolder10Px">
 			</td>
 			<td>
-<span class="TableContent"><span class="FoeIndex">5.</span> <span class="FoeControl">else</span> </span>			</td>
+<span class="TableContent">&nbsp;&nbsp;&nbsp;&nbsp;<span class="FoeIndex">6.1.</span> El sistema recupera la información del servicio desde la base de datos.</span>			</td>
 		</tr>
 		<tr class="TableRow2">
 			<td class="TableCellSpaceHolder10Px">
 			</td>
 			<td>
-<span class="TableContent">&nbsp;&nbsp;&nbsp;&nbsp;<span class="FoeIndex">5.1.</span> 5.1. El sistema muestra mensaje indicando que no hay servicios adicionales.</span>			</td>
+<span class="TableContent">&nbsp;&nbsp;&nbsp;&nbsp;<span class="FoeIndex">6.2.</span> El sistema muestra en pantalla los datos del servicio, tales como:</span>			</td>
 		</tr>
 		<tr class="TableRow1">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td>
+<span class="TableContent">&nbsp;&nbsp;&nbsp;&nbsp;<span class="FoeIndex">6.3.</span> Tipo de servicio</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td>
+<span class="TableContent">&nbsp;&nbsp;&nbsp;&nbsp;<span class="FoeIndex">6.4.</span> Mascota asociada</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td>
+<span class="TableContent">&nbsp;&nbsp;&nbsp;&nbsp;<span class="FoeIndex">6.5.</span> Fecha del servicio</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td>
+<span class="TableContent">&nbsp;&nbsp;&nbsp;&nbsp;<span class="FoeIndex">6.6.</span> Observaciones</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td>
+<span class="TableContent">&nbsp;&nbsp;&nbsp;&nbsp;<span class="FoeIndex">6.7.</span> Estado del servicio</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td>
+<span class="TableContent">&nbsp;&nbsp;&nbsp;&nbsp;<span class="FoeIndex">6.8.</span> Fecha de registro</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td>
+<span class="TableContent">&nbsp;&nbsp;&nbsp;&nbsp;<span class="FoeIndex">6.9.</span> El actor revisa la información mostrada.</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td>
+<span class="TableContent">&nbsp;&nbsp;&nbsp;&nbsp;<span class="FoeIndex">6.10.</span> El actor finaliza la consulta o retorna al listado.</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td>
+<span class="TableContent"><span class="FoeIndex">7.</span> <span class="FoeControl">else</span> </span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td>
+<span class="TableContent">&nbsp;&nbsp;&nbsp;&nbsp;<span class="FoeIndex">7.1.</span> El sistema muestra un mensaje: "Servicio adicional no encontrado".</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td>
+<span class="TableContent">&nbsp;&nbsp;&nbsp;&nbsp;<span class="FoeIndex">7.2.</span> El actor puede realizar una nueva búsqueda.</span>			</td>
+		</tr>
+		<tr class="TableRow2">
 			<td class="TableCellSpaceHolder10Px">
 			</td>
 			<td>
@@ -693,7 +759,7 @@ Relationships Detail			</td>
 			</td>
 		</tr>
 	</table>
-<a name="JBt3lrmFYEDcQROD"></a>	<table border="0" cellpadding="0" width="100%" cellspacing="0">
+<a name="5J57trmFYEDcYRa9"></a>	<table border="0" cellpadding="0" width="100%" cellspacing="0">
 		<tr>
 			<td colSpan="4" class="TableHeaderLine">
 			</td>
