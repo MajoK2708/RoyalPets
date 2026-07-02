@@ -1,0 +1,1771 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Royal Pets</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<section id="inicio" class="page mostrar">
+
+    <header class="encabezado">
+
+        <div class="container d-flex justify-content-between align-items-center py-3">
+
+            <div class="logo d-flex align-items-center gap-3">
+
+                <div class="logo-patitas">
+                    🐾
+                </div>
+
+                <div>
+
+                    <h1 class="logo-titulo">
+                        Royal Pets
+                    </h1>
+
+                    <p class="logo-slogan">
+                        Más que mascotas, son familia
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="d-flex gap-3">
+
+                <button
+                    class="btn btn-link boton-login"
+                    onclick="showPage('login')">
+
+                    Iniciar Sesión
+
+                </button>
+
+                <button
+                    class="btn boton-principal"
+                    onclick="showPage('registro')">
+
+                    Registrarse
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <section class="inicio">
+
+        <div class="container contenido-inicio">
+
+            <div class="contenido">
+
+                <div class="etiqueta">
+
+                    🐶 Tu mascota merece el mejor cuidado
+
+                </div>
+
+                <h2>
+
+                    Royal Pets
+
+                </h2>
+
+                <h3>
+
+                    Plataforma para el cuidado de mascotas
+
+                </h3>
+
+                <p>
+
+                    Administra la información de tus mascotas,
+                    agenda citas veterinarias, consulta el historial
+                    clínico y conoce nuestros servicios de manera
+                    rápida y sencilla.
+
+                </p>
+
+                <div class="d-flex gap-3 flex-wrap">
+
+                    <button
+                        class="btn boton-principal btn-lg"
+                        onclick="showPage('registro')">
+
+                        Comienza Ahora
+
+                    </button>
+
+                    <button
+                        class="btn btn-light btn-lg"
+                        onclick="showPage('login')">
+
+                        Iniciar Sesión
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="py-5 bg-light">
+
+        <div class="container">
+
+            <div class="row align-items-center">
+
+                <div class="col-lg-6">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1518717758536-85ae29035b6d?w=900"
+                        class="img-fluid rounded shadow">
+
+                </div>
+
+                <div class="col-lg-6">
+
+                    <h2 class="titulo-seccion mb-4">
+
+                        Acerca de Nosotros
+
+                    </h2>
+
+                    <p>
+
+                        En <strong>Royal Pets</strong> creemos que las
+                        mascotas hacen parte de la familia. Nuestra
+                        plataforma fue diseñada para facilitar la
+                        gestión de citas veterinarias, el historial
+                        clínico y el seguimiento de cada mascota.
+
+                    </p>
+
+                    <p>
+
+                        Nuestro objetivo es brindar una experience
+                        cómoda, organizada y segura para propietarios
+                        y veterinarios, ofreciendo herramientas que
+                        permiten tener toda la información en un solo
+                        lugar.
+
+                    </p>
+
+                    <button
+                        class="btn boton-principal">
+
+                        Conocer Más
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="py-5">
+
+        <div class="container">
+
+            <div class="text-center mb-5">
+
+                <h2 class="titulo-seccion">
+
+                    ¿Qué puedes hacer?
+
+                </h2>
+
+                <p>
+
+                    Gestiona todos los servicios para tu mascota desde
+                    una sola plataforma.
+
+                </p>
+
+            </div>
+
+            <div class="row g-4">
+
+                <div class="col-md-3">
+
+                    <div class="tarjeta text-center">
+
+                        <div class="icono blue">
+
+                            🐾
+
+                        </div>
+
+                        <h4>
+
+                            Mascotas
+
+                        </h4>
+
+                        <p>
+
+                            Registra y administra la información de todas
+                            tus mascotas.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-3">
+
+                    <div class="tarjeta text-center">
+
+                        <div class="icono green">
+
+                            📅
+
+                        </div>
+
+                        <h4>
+
+                            Citas
+
+                        </h4>
+
+                        <p>
+
+                            Agenda y consulta las citas veterinarias de
+                            manera sencilla.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-3">
+
+                    <div class="tarjeta text-center">
+
+                        <div class="icono purple">
+
+                            🩺
+
+                        </div>
+
+                        <h4>
+
+                            Historial
+
+                        </h4>
+
+                        <p>
+
+                            Consulta diagnósticos, tratamientos y
+                            antecedentes médicos.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-3">
+
+                    <div class="tarjeta text-center">
+
+                        <div class="icono gold">
+
+                            ⭐
+
+                        </div>
+
+                        <h4>
+
+                            Servicios
+
+                        </h4>
+
+                        <p>
+
+                            Descubre todos los servicios disponibles para
+                            el bienestar de tu mascota.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="estadisticas">
+
+        <div class="container">
+
+            <div class="row g-4">
+
+                <div class="col-md-3">
+
+                    <div class="tarjeta">
+
+                        <div class="icono blue">
+
+                            🐾
+
+                        </div>
+
+                        <h3>
+
+                            850+
+
+                        </h3>
+
+                        <p>
+
+                            Mascotas registradas
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-3">
+
+                    <div class="tarjeta">
+
+                        <div class="icono green">
+
+                            👨‍⚕️
+
+                        </div>
+
+                        <h3>
+
+                            120+
+
+                        </h3>
+
+                        <p>
+
+                            Veterinarios
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-3">
+
+                    <div class="tarjeta">
+
+                        <div class="icono purple">
+
+                            📅
+
+                        </div>
+
+                        <h3>
+
+                            1500+
+
+                        </h3>
+
+                        <p>
+
+                            Citas realizadas
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-3">
+
+                    <div class="tarjeta">
+
+                        <div class="icono gold">
+
+                            🏆
+
+                        </div>
+
+                        <h3>
+
+                            98%
+
+                        </h3>
+
+                        <p>
+
+                            Satisfacción de clientes
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</section>
+
+<section id="login" class="page fondo">
+
+    <div class="container py-5">
+
+        <button
+            class="btn volver mb-4"
+            onclick="showPage('inicio')">
+
+            ← Volver al inicio
+
+        </button>
+
+        <div class="formulario">
+
+            <div class="text-center mb-4">
+
+                <div class="logo-patitas mx-auto">
+
+                    🐾
+
+                </div>
+
+                <h2 class="titulo-formulario">
+
+                    Bienvenido nuevamente
+
+                </h2>
+
+                <p>
+
+                    Ingresa tus credenciales para acceder a Royal Pets.
+
+                </p>
+
+            </div>
+
+            <div class="mensaje">
+
+                <strong>Credenciales de prueba</strong>
+
+                <br>
+
+                Administrador:
+                admin@royalpets.com
+
+                <br>
+
+                Contraseña:
+                admin123
+
+            </div>
+
+            <div class="mb-3">
+
+                <label class="form-label">
+
+                    📧 Correo electrónico
+
+                </label>
+
+                <input
+                    type="email"
+                    class="form-control form-control-lg"
+                    placeholder="correo@ejemplo.com">
+
+            </div>
+
+            <div class="mb-3">
+
+                <label class="form-label">
+
+                    🔒 Contraseña
+
+                </label>
+
+                <input
+                    type="password"
+                    class="form-control form-control-lg"
+                    placeholder="********">
+
+            </div>
+
+            <div class="d-flex justify-content-between align-items-center mb-4">
+
+                <div class="form-check">
+
+                    <input
+                        class="form-check-input"
+                        type="checkbox">
+
+                    <label class="form-check-label">
+
+                        Recordarme
+
+                    </label>
+
+                </div>
+
+                <a
+                    href="#"
+                    class="enlace">
+
+                    ¿Olvidaste tu contraseña?
+
+                </a>
+
+            </div>
+
+            <button
+                class="btn boton-principal w-100 btn-lg"
+                onclick="showPage('dashboard')">
+
+                Iniciar Sesión
+
+            </button>
+
+            <p class="text-center mt-4">
+
+                ¿No tienes cuenta?
+
+                <a
+                    href="#"
+                    class="enlace"
+                    onclick="showPage('registro')">
+
+                    Regístrate aquí
+
+                </a>
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section id="registro" class="page fondo">
+
+    <div class="container py-5">
+
+        <button
+            class="btn volver mb-4"
+            onclick="showPage('inicio')">
+
+            ← Volver al inicio
+
+        </button>
+
+        <div class="formulario">
+
+            <div class="text-center mb-4">
+
+                <div class="logo-patitas mx-auto">
+
+                    🐾
+
+                </div>
+
+                <h2 class="titulo-formulario">
+
+                    Crear Cuenta
+
+                </h2>
+
+                <p>
+
+                    Completa la información para registrarte en Royal Pets.
+
+                </p>
+
+            </div>
+
+            <div class="row">
+
+                <div class="col-md-6 mb-3">
+
+                    <label class="form-label">
+
+                        Nombre completo
+
+                    </label>
+
+                    <input
+                        class="form-control form-control-lg"
+                        placeholder="Juan Pérez">
+
+                </div>
+
+                <div class="col-md-6 mb-3">
+
+                    <label class="form-label">
+
+                        Teléfono
+
+                    </label>
+
+                    <input
+                        class="form-control form-control-lg"
+                        placeholder="3001234567">
+
+                </div>
+
+            </div>
+
+            <div class="mb-3">
+
+                <label class="form-label">
+
+                    Correo electrónico
+
+                </label>
+
+                <input
+                    class="form-control form-control-lg"
+                    placeholder="correo@ejemplo.com">
+
+            </div>
+
+            <div class="row">
+
+                <div class="col-md-6 mb-3">
+
+                    <label class="form-label">
+
+                        Ciudad
+
+                    </label>
+
+                    <input
+                        class="form-control form-control-lg"
+                        placeholder="Bogotá">
+
+                </div>
+
+                <div class="col-md-6 mb-3">
+
+                    <label class="form-label">
+
+                        Tipo de usuario
+
+                    </label>
+
+                    <select class="form-select form-select-lg">
+
+                        <option>
+
+                            Dueño de mascota
+
+                        </option>
+
+                        <option>
+
+                            Veterinario
+
+                        </option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+            <div class="mb-3">
+
+                <label class="form-label">
+
+                    Contraseña
+
+                </label>
+
+                <input
+                    type="password"
+                    class="form-control form-control-lg"
+                    placeholder="********">
+
+            </div>
+
+            <div class="mb-4">
+
+                <label class="form-label">
+
+                    Confirmar contraseña
+
+                </label>
+
+                <input
+                    type="password"
+                    class="form-control form-control-lg"
+                    placeholder="********">
+
+            </div>
+
+            <button
+                class="btn boton-principal w-100 btn-lg"
+                onclick="showPage('dashboard')">
+
+                Crear Cuenta
+
+            </button>
+
+            <p class="text-center mt-4">
+
+                ¿Ya tienes una cuenta?
+
+                <a
+                    href="#"
+                    class="enlace"
+                    onclick="showPage('login')">
+
+                    Inicia sesión
+
+                </a>
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section id="dashboard" class="page fondo">
+
+    <header class="encabezado">
+
+        <div class="container d-flex justify-content-between align-items-center py-3">
+
+            <div class="logo d-flex align-items-center gap-3">
+
+                <div class="logo-patitas">
+                    🐾
+                </div>
+
+                <div>
+
+                    <h2 class="logo-titulo">
+                        Royal Pets
+                    </h2>
+
+                    <p class="logo-slogan">
+                        Panel Administrativo
+                    </p>
+
+                </div>
+
+            </div>
+
+            <button
+                class="btn btn-danger"
+                onclick="showPage('inicio')">
+
+                Cerrar sesión
+
+            </button>
+
+        </div>
+
+    </header>
+
+    <nav class="menu">
+
+        <div class="container d-flex justify-content-center flex-wrap">
+
+            <button
+                id="nav-mascotas"
+                class="boton-menu active"
+                onclick="showCrud('mascotas',this)">
+
+                Mascotas
+
+            </button>
+
+            <button
+                id="nav-citas"
+                class="boton-menu"
+                onclick="showCrud('citas',this)">
+
+                Citas
+
+            </button>
+
+            <button
+                id="nav-consultas"
+                class="boton-menu"
+                onclick="showCrud('consultas',this)">
+
+                Consultas
+
+            </button>
+
+            <button
+                id="nav-servicios"
+                class="boton-menu"
+                onclick="showCrud('servicios',this)">
+
+                Servicios
+
+            </button>
+
+            <button
+                id="nav-historial"
+                class="boton-menu"
+                onclick="showCrud('historial',this)">
+
+                Historial
+
+            </button>
+
+        </div>
+
+    </nav>
+
+    <div class="container py-4">
+
+        <section id="crud-mascotas" class="crud-seccion activo">
+
+            <div class="caja">
+
+                <div class="d-flex justify-content-between align-items-center mb-4">
+
+                    <div>
+
+                        <h2 class="titulo-seccion">
+
+                            Gestión de Mascotas
+
+                        </h2>
+
+                        <p>
+
+                            Administra todas las mascotas registradas.
+
+                        </p>
+
+                    </div>
+
+                    <button
+                        class="btn boton-principal"
+                        onclick="showInnerView('registroMascota')">
+
+                        Registrar Mascota
+
+                    </button>
+
+                </div>
+
+                <div class="row mb-4">
+
+                    <div class="col-md-8">
+
+                        <input
+                            class="form-control"
+                            placeholder="Buscar mascota...">
+
+                    </div>
+
+                    <div class="col-md-4">
+
+                        <select class="form-select">
+
+                            <option>Todas</option>
+                            <option>Perros</option>
+                            <option>Gatos</option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+                <div class="row g-4">
+
+                    <div class="col-md-4">
+
+                        <div class="mascota">
+
+                            <div class="encabezado-mascota">
+
+                                🐶
+
+                            </div>
+
+                            <div class="datos">
+
+                                <h3>
+
+                                    Max
+
+                                </h3>
+
+                                <p><strong>Raza:</strong> Labrador</p>
+
+                                <p><strong>Edad:</strong> 4 años</p>
+
+                                <p><strong>Dueño:</strong> Juan Pérez</p>
+
+                                <div class="d-flex gap-2 mt-3">
+
+                                    <button
+                                        class="btn btn-primary"
+                                        onclick="showInnerView('detalleMascota')">
+
+                                        Ver
+
+                                    </button>
+
+                                    <button
+                                        class="btn btn-warning"
+                                        onclick="showInnerView('editarMascota')">
+
+                                        Editar
+
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-4">
+
+                        <div class="mascota">
+
+                            <div class="encabezado-mascota">
+
+                                🐱
+
+                            </div>
+
+                            <div class="datos">
+
+                                <h3>
+
+                                    Luna
+
+                                </h3>
+
+                                <p><strong>Raza:</strong> Siamés</p>
+
+                                <p><strong>Edad:</strong> 2 años</p>
+
+                                <p><strong>Dueño:</strong> Ana Martínez</p>
+
+                                <div class="d-flex gap-2 mt-3">
+
+                                    <button
+                                        class="btn btn-primary"
+                                        onclick="showInnerView('detalleMascota')">
+
+                                        Ver
+
+                                    </button>
+
+                                    <button
+                                        class="btn btn-warning"
+                                        onclick="showInnerView('editarMascota')">
+
+                                        Editar
+
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-4">
+
+                        <div class="mascota">
+
+                            <div class="encabezado-mascota">
+
+                                🐶
+
+                            </div>
+
+                            <div class="datos">
+
+                                <h3>
+
+                                    Rocky
+
+                                </h3>
+
+                                <p><strong>Raza:</strong> Husky</p>
+
+                                <p><strong>Edad:</strong> 6 años</p>
+
+                                <p><strong>Dueño:</strong> Carlos Gómez</p>
+
+                                <div class="d-flex gap-2 mt-3">
+
+                                    <button
+                                        class="btn btn-primary"
+                                        onclick="showInnerView('detalleMascota')">
+
+                                        Ver
+
+                                    </button>
+
+                                    <button
+                                        class="btn btn-warning"
+                                        onclick="showInnerView('editarMascota')">
+
+                                        Editar
+
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="crud-registroMascota" class="crud-seccion">
+
+            <div class="formulario">
+
+                <div class="d-flex justify-content-between align-items-center mb-4">
+
+                    <h2 class="titulo-formulario">
+
+                        Registrar Mascota
+
+                    </h2>
+
+                    <button class="btn-close" onclick="closeInnerView('mascotas')"></button>
+
+                </div>
+
+                <div class="row">
+
+                    <div class="col-md-6 mb-3">
+
+                        <label class="form-label">Nombre</label>
+
+                        <input class="form-control" placeholder="Nombre de la mascota">
+
+                    </div>
+
+                    <div class="col-md-6 mb-3">
+
+                        <label class="form-label">Especie</label>
+
+                        <select class="form-select">
+
+                            <option>Perro</option>
+                            <option>Gato</option>
+                            <option>Ave</option>
+                            <option>Conejo</option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+                <div class="row">
+
+                    <div class="col-md-6 mb-3">
+
+                        <label class="form-label">Raza</label>
+
+                        <input class="form-control" placeholder="Ej: Labrador">
+
+                    </div>
+
+                    <div class="col-md-6 mb-3">
+
+                        <label class="form-label">Edad</label>
+
+                        <input class="form-control" placeholder="Ej: 3 años">
+
+                    </div>
+
+                </div>
+
+                <div class="row">
+
+                    <div class="col-md-6 mb-3">
+
+                        <label class="form-label">Peso</label>
+
+                        <input class="form-control" placeholder="Ej: 25 kg">
+
+                    </div>
+
+                    <div class="col-md-6 mb-3">
+
+                        <label class="form-label">Sexo</label>
+
+                        <select class="form-select">
+
+                            <option>Macho</option>
+                            <option>Hembra</option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+                <div class="mb-3">
+
+                    <label class="form-label">Propietario</label>
+
+                    <input class="form-control" placeholder="Nombre del propietario">
+
+                </div>
+
+                <div class="mb-3">
+
+                    <label class="form-label">Estado de salud</label>
+
+                    <textarea class="form-control" rows="3" placeholder="Información médica..."></textarea>
+
+                </div>
+
+                <div class="mb-4">
+
+                    <label class="form-label">Fotografía</label>
+
+                    <input type="file" class="form-control">
+
+                </div>
+
+                <div class="d-flex justify-content-end gap-3">
+
+                    <button class="btn btn-secondary" onclick="closeInnerView('mascotas')">Cancelar</button>
+
+                    <button class="btn boton-principal" onclick="closeInnerView('mascotas')">Registrar Mascota</button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="crud-editarMascota" class="crud-seccion">
+
+            <div class="formulario">
+
+                <div class="d-flex justify-content-between align-items-center mb-4">
+
+                    <h2 class="titulo-formulario">
+
+                        Editar Mascota
+
+                    </h2>
+
+                    <button class="btn-close" onclick="closeInnerView('mascotas')"></button>
+
+                </div>
+
+                <div class="row">
+
+                    <div class="col-md-6 mb-3">
+
+                        <label class="form-label">Nombre</label>
+
+                        <input class="form-control" value="Max">
+
+                    </div>
+
+                    <div class="col-md-6 mb-3">
+
+                        <label class="form-label">Especie</label>
+
+                        <select class="form-select">
+
+                            <option selected>Perro</option>
+                            <option>Gato</option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+                <div class="row">
+
+                    <div class="col-md-6 mb-3">
+
+                        <label class="form-label">Raza</label>
+
+                        <input class="form-control" value="Labrador">
+
+                    </div>
+
+                    <div class="col-md-6 mb-3">
+
+                        <label class="form-label">Edad</label>
+
+                        <input class="form-control" value="4 años">
+
+                    </div>
+
+                </div>
+
+                <div class="row">
+
+                    <div class="col-md-6 mb-3">
+
+                        <label class="form-label">Peso</label>
+
+                        <input class="form-control" value="30 kg">
+
+                    </div>
+
+                    <div class="col-md-6 mb-3">
+
+                        <label class="form-label">Sexo</label>
+
+                        <select class="form-select">
+
+                            <option selected>Macho</option>
+                            <option>Hembra</option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+                <div class="mb-3">
+
+                    <label class="form-label">Propietario</label>
+
+                    <input class="form-control" value="Juan Pérez">
+
+                </div>
+
+                <div class="mb-3">
+
+                    <label class="form-label">Estado de salud</label>
+
+                    <textarea class="form-control" rows="3">Vacunas al día. Buen estado de salud.</textarea>
+
+                </div>
+
+                <div class="mb-4">
+
+                    <label class="form-label">Cambiar fotografía</label>
+
+                    <input type="file" class="form-control">
+
+                </div>
+
+                <div class="d-flex justify-content-end gap-3">
+
+                    <button class="btn btn-secondary" onclick="closeInnerView('mascotas')">Cancelar</button>
+
+                    <button class="btn boton-principal" onclick="closeInnerView('mascotas')">Guardar Cambios</button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="crud-detalleMascota" class="crud-seccion">
+
+            <div class="formulario">
+
+                <div class="d-flex justify-content-between align-items-center mb-4">
+
+                    <h2 class="titulo-formulario">
+
+                        Información de la Mascota
+
+                    </h2>
+
+                    <button class="btn-close" onclick="closeInnerView('mascotas')"></button>
+
+                </div>
+
+                <div class="row">
+
+                    <div class="col-md-6">
+
+                        <p><strong>Nombre:</strong> Max</p>
+                        <p><strong>Especie:</strong> Perro</p>
+                        <p><strong>Raza:</strong> Labrador</p>
+                        <p><strong>Edad:</strong> 4 años</p>
+
+                    </div>
+
+                    <div class="col-md-6">
+
+                        <p><strong>Peso:</strong> 30 kg</p>
+                        <p><strong>Sexo:</strong> Macho</p>
+                        <p><strong>Propietario:</strong> Juan Pérez</p>
+                        <p><strong>Estado:</strong> Saludable</p>
+
+                    </div>
+
+                </div>
+
+                <hr>
+
+                <p>
+
+                    <strong>Observaciones:</strong>
+                    Mascota con vacunas al día y excelente estado de salud.
+
+                </p>
+
+                <div class="text-end">
+
+                    <button class="btn boton-principal" onclick="closeInnerView('mascotas')">Aceptar</button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="crud-citas" class="crud-seccion">
+
+            <div class="caja">
+
+                <div class="d-flex justify-content-between align-items-center mb-4">
+
+                    <div>
+
+                        <h2 class="titulo-seccion">Gestión de Citas</h2>
+
+                        <p>Administra las citas veterinarias de las mascotas.</p>
+
+                    </div>
+
+                    <button class="btn boton-principal" onclick="showInnerView('nuevaCita')">Agendar Cita</button>
+
+                </div>
+
+                <div class="row g-4">
+
+                    <div class="col-md-6">
+
+                        <div class="crud">
+
+                            <h3>Consulta General</h3>
+                            <hr>
+                            <p><strong>Mascota:</strong> Max</p>
+                            <p><strong>Fecha:</strong> 25/06/2026</p>
+                            <p><strong>Hora:</strong> 9:00 AM</p>
+                            <span class="estado blue">Programada</span>
+
+                            <div class="mt-4 d-flex gap-2 flex-wrap">
+
+                                <button class="btn btn-warning" onclick="showInnerView('editarCita')">Reprogramar</button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="crud-nuevaCita" class="crud-seccion">
+
+            <div class="formulario">
+
+                <div class="d-flex justify-content-between align-items-center mb-4">
+
+                    <h2 class="titulo-formulario">Agendar Cita</h2>
+
+                    <button class="btn-close" onclick="closeInnerView('citas')"></button>
+
+                </div>
+
+                <div class="mb-3">
+
+                    <label class="form-label">Mascota</label>
+
+                    <select class="form-select">
+
+                        <option>Max</option>
+                        <option>Luna</option>
+
+                    </select>
+
+                </div>
+
+                <div class="row">
+
+                    <div class="col-md-6 mb-3">
+
+                        <label class="form-label">Fecha</label>
+
+                        <input type="date" class="form-control">
+
+                    </div>
+
+                    <div class="col-md-6 mb-3">
+
+                        <label class="form-label">Hora</label>
+
+                        <input type="time" class="form-control">
+
+                    </div>
+
+                </div>
+
+                <div class="d-flex justify-content-end gap-3">
+
+                    <button class="btn btn-secondary" onclick="closeInnerView('citas')">Cancelar</button>
+
+                    <button class="btn boton-principal" onclick="closeInnerView('citas')">Guardar</button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="crud-editarCita" class="crud-seccion">
+
+            <div class="formulario">
+
+                <div class="d-flex justify-content-between align-items-center mb-4">
+
+                    <h2 class="titulo-formulario">Reprogramar Cita</h2>
+
+                    <button class="btn-close" onclick="closeInnerView('citas')"></button>
+
+                </div>
+
+                <div class="mb-3">
+
+                    <label class="form-label">Nueva Fecha</label>
+
+                    <input type="date" class="form-control">
+
+                </div>
+
+                <div class="mb-3">
+
+                    <label class="form-label">Nueva Hora</label>
+
+                    <input type="time" class="form-control">
+
+                </div>
+
+                <div class="d-flex justify-content-end gap-3">
+
+                    <button class="btn btn-secondary" onclick="closeInnerView('citas')">Cancelar</button>
+
+                    <button class="btn boton-principal" onclick="closeInnerView('citas')">Guardar Cambios</button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="crud-consultas" class="crud-seccion">
+
+            <div class="caja">
+
+                <div class="d-flex justify-content-between align-items-center mb-4">
+
+                    <div>
+
+                        <h2 class="titulo-seccion">Consultas Médicas</h2>
+
+                        <p>Historial de consultas realizadas.</p>
+
+                    </div>
+
+                </div>
+
+                <div class="crud">
+
+                    <h3>Consulta General</h3>
+                    <hr>
+                    <p><strong>Mascota:</strong> Max</p>
+                    <p><strong>Diagnóstico:</strong> Vacunación anual.</p>
+
+                    <div class="mt-3">
+
+                        <button class="btn btn-primary" onclick="showInnerView('detalleConsulta')">Ver Detalle</button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="crud-detalleConsulta" class="crud-seccion">
+
+            <div class="formulario">
+
+                <div class="d-flex justify-content-between align-items-center mb-4">
+
+                    <h2 class="titulo-formulario">Detalle de Consulta</h2>
+
+                    <button class="btn-close" onclick="closeInnerView('consultas')"></button>
+
+                </div>
+
+                <div class="p-3 mb-4" style="background-color: #eef6ff; border-radius: 12px;">
+
+                    <p>🐾 <strong>Mascota:</strong> Max</p>
+                    <p>📅 <strong>Fecha:</strong> 15/06/2026</p>
+
+                </div>
+
+                <div class="d-flex justify-content-end">
+
+                    <button class="btn boton-principal" onclick="closeInnerView('consultas')">Aceptar</button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="crud-servicios" class="crud-seccion">
+
+            <div class="caja">
+
+                <div class="d-flex justify-content-between align-items-center mb-4">
+
+                    <div>
+
+                        <h2 class="titulo-seccion">Servicios</h2>
+
+                        <p>Servicios disponibles para las mascotas.</p>
+
+                    </div>
+
+                    <button class="btn boton-principal" onclick="showInnerView('nuevoServicio')">Adicionar Servicio</button>
+
+                </div>
+
+                <div class="row g-4">
+
+                    <div class="col-md-6">
+
+                        <div class="servicio">
+
+                            <h3>Vacunación</h3>
+                            <p><strong>Precio:</strong> $60.000</p>
+                            <button class="btn btn-warning" onclick="showInnerView('editarServicio')">Editar</button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="crud-nuevoServicio" class="crud-seccion">
+
+            <div class="formulario">
+
+                <div class="d-flex justify-content-between align-items-center mb-4">
+
+                    <h2 class="titulo-formulario text-center">Adicionar Servicio</h2>
+
+                    <button class="btn-close" onclick="closeInnerView('servicios')"></button>
+
+                </div>
+
+                <div class="mb-3">
+
+                    <label class="form-label">Nombre del servicio</label>
+
+                    <input class="form-control">
+
+                </div>
+
+                <div class="d-flex justify-content-end gap-3">
+
+                    <button class="btn btn-secondary" onclick="closeInnerView('servicios')">Cancelar</button>
+
+                    <button class="btn boton-principal" onclick="closeInnerView('servicios')">Guardar</button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="crud-editarServicio" class="crud-seccion">
+
+            <div class="formulario">
+
+                <div class="d-flex justify-content-between align-items-center mb-4">
+
+                    <h2 class="titulo-formulario text-center">Editar Servicio</h2>
+
+                    <button class="btn-close" onclick="closeInnerView('servicios')"></button>
+
+                </div>
+
+                <div class="mb-3">
+
+                    <label class="form-label">Nombre</label>
+
+                    <input class="form-control" value="Vacunación">
+
+                </div>
+
+                <div class="d-flex justify-content-end gap-3">
+
+                    <button class="btn btn-secondary" onclick="closeInnerView('servicios')">Cancelar</button>
+
+                    <button class="btn boton-principal" onclick="closeInnerView('servicios')">Guardar Cambios</button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="crud-historial" class="crud-seccion">
+
+            <div class="caja">
+
+                <div class="d-flex justify-content-between align-items-center mb-4">
+
+                    <h2 class="titulo-seccion">Historial Clínico</h2>
+
+                </div>
+
+                <div class="crud">
+
+                    <h3>Max</h3>
+                    <hr>
+                    <button class="btn btn-primary" onclick="showInnerView('detalleHistorial')">Ver Detalle</button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="crud-detalleHistorial" class="crud-seccion">
+
+            <div class="formulario">
+
+                <div class="d-flex justify-content-between align-items-center mb-4">
+
+                    <h2 class="titulo-formulario">Detalle del Historial Clínico</h2>
+
+                    <button class="btn-close" onclick="closeInnerView('historial')"></button>
+
+                </div>
+
+                <p><strong>Mascota:</strong> Max</p>
+                <p><strong>Diagnóstico:</strong> Excelente estado de salud.</p>
+
+                <div class="text-end mt-4">
+
+                    <button class="btn boton-principal" onclick="closeInnerView('historial')">Cerrar</button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </div>
+
+</section>
+
+<script>
+// Navegación principal entre páginas completas (Landing -> Login -> Dashboard)
+function showPage(id){
+    document.querySelectorAll(".page").forEach(function(pagina){
+        pagina.classList.remove("mostrar");
+    });
+    document.getElementById(id).classList.add("mostrar");
+}
+
+// Control de las pestañas superiores del menú del Dashboard
+function showCrud(id, boton){
+    document.querySelectorAll(".crud-seccion").forEach(function(seccion){
+        seccion.classList.remove("activo");
+    });
+    
+    document.getElementById("crud-" + id).classList.add("activo");
+    
+    document.querySelectorAll(".boton-menu").forEach(function(item){
+        item.classList.remove("active");
+    });
+
+    if(boton) {
+        boton.classList.add("active");
+    }
+}
+
+// Abre formularios de forma interna dentro de la sección actual sin romper la barra de navegación
+function showInnerView(targetSubSectionId) {
+    document.querySelectorAll(".crud-seccion").forEach(function(seccion){
+        seccion.classList.remove("activo");
+    });
+    document.getElementById("crud-" + targetSubSectionId).classList.add("activo");
+}
+
+// Cierra las sub-secciones internas regresando a la lista del menú correspondiente
+function closeInnerView(menuId) {
+    showCrud(menuId, document.getElementById("nav-" + menuId));
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,732 @@
+/* =========================
+   GENERAL
+========================= */
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    color:#0f172a;
+    background:#ffffff;
+}
+
+.page{
+    display:none;
+}
+
+.mostrar{
+    display:block;
+}
+
+html{
+
+scroll-behavior:smooth;
+
+}
+
+body{
+
+background:#f8fafc;
+
+}
+
+/* =========================
+   ENCABEZADO
+========================= */
+
+.encabezado{
+ background:#ffffff;
+position:sticky;
+top:0;
+z-index:1000;
+box-shadow:0 2px 15px rgba(0,0,0,.08);
+}
+
+.logo-patitas{
+transition:.3s;
+    width:54px;
+    height:54px;
+    border-radius:14px;
+    background:#1976e6;
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:28px;
+}
+.logo-patitas:hover{
+
+transform:rotate(-10deg) scale(1.1);
+
+}
+
+.logo-titulo{
+    color:#1976e6;
+    font-size:32px;
+    font-weight:bold;
+    margin:0;
+}
+
+.logo-slogan{
+    color:gray;
+    margin:0;
+}
+
+.logo{
+
+align-items:center;
+
+}
+
+.boton-login{
+    color:#1976e6;
+    text-decoration:none;
+    font-weight:bold;
+    font-size:17px;
+}
+
+.boton-principal{
+    background:#d8ae2e !important;
+    color:white !important;
+    border:none;
+padding:12px 28px;
+border-radius:12px;
+font-weight:bold;
+transition:.3s;
+}
+.boton-principal:hover{
+
+transform:translateY(-2px);
+
+}
+
+/* =========================
+   LANDING
+========================= */
+
+.inicio{
+    background:linear-gradient(rgba(25,118,230,.8),rgba(16,88,187,.8)),
+    url("https://images.unsplash.com/photo-1517849845537-4d257902454a?q=80&w=1400&auto=format&fit=crop");
+    background-size:cover;
+    background-position:center;
+    padding:40px 0 80px;
+min-height:85vh;
+}
+
+.contenido-inicio{
+    min-height:520px;
+    display:flex;
+    align-items:center;
+}
+
+.contenido{
+    max-width:650px;
+    color:white;
+animation:aparecer 1s;
+}
+
+.contenido h2{
+    font-size:65px;
+    font-weight:bold;
+font-size:70px;
+
+}
+
+.contenido h3{
+    font-size:50px;
+    font-weight:bold;
+    margin-bottom:20px;
+font-size:42px;
+}
+
+.contenido p{
+    font-size:22px;
+max-width:620px;
+line-height:1.7;
+}
+
+.etiqueta{
+    display:inline-block;
+    background:rgba(255,255,255,.2);
+    padding:12px 22px;
+    border-radius:30px;
+    margin-bottom:20px;
+    font-weight:bold;	
+font-size:16px;
+}
+
+/* =========================
+   ESTADÍSTICAS
+========================= */
+
+.estadisticas{
+    margin-top:-60px;
+    padding-bottom:60px;
+margin-top:10px;
+}
+
+.tarjeta{
+    background:white;
+    border-radius:20px;
+    padding:28px;
+    box-shadow:0 10px 20px rgba(0,0,0,.1);
+}
+
+.tarjeta h3{
+    font-size:42px;
+    font-weight:bold;
+}
+
+.tarjeta p{
+    color:gray;
+}
+
+.icono{
+    width:65px;
+    height:65px;
+    border-radius:18px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:white;
+    font-size:30px;
+    margin-bottom:18px;
+transition:.3s;
+}
+.tarjeta:hover .icono{
+
+transform:scale(1.15);
+
+}
+
+.blue{
+    background:#2f80ed;
+}
+
+.green{
+    background:#22c55e;
+}
+
+.purple{
+    background:#a855f7;
+}
+
+.gold{
+    background:#d8ae2e;
+}
+
+/* =========================
+   LOGIN Y REGISTRO
+========================= */
+
+.fondo{
+    background:#d9ebf8;
+    min-height:100vh;
+}
+
+.volver{
+    background:white;
+    border-radius:15px;
+    padding:10px 20px;
+}
+
+.formulario{
+    background:white;
+    max-width:560px;
+    margin:auto;
+    padding:35px;
+    border-radius:20px;
+    box-shadow:0 10px 20px rgba(0,0,0,.1);
+}
+
+.titulo-formulario{
+    color:#4b5563;
+    font-size:32px;
+    margin-top:15px;
+}
+
+.mensaje{
+    background:#eef6ff;
+    border:2px solid #6aa8ff;
+    padding:15px;
+    border-radius:15px;
+    margin-bottom:20px;
+}
+
+.enlace{
+    color:#1976e6;
+    text-decoration:none;
+}
+
+.form-control,
+.form-select{
+    border-radius:12px;
+    padding:12px;
+}
+/* =========================
+   DASHBOARD
+========================= */
+
+.menu{
+    background:#ffffff;
+    border-top:1px solid #e5e7eb;
+    border-bottom:1px solid #e5e7eb;
+}
+
+.boton-menu{
+    background:none;
+    border:none;
+    padding:16px 18px;
+    color:#4b5563;
+    font-weight:bold;
+    border-bottom:3px solid transparent;
+}
+
+.boton-menu.active{
+    color:#1976e6;
+    border-color:#d8ae2e;
+}
+
+/* =========================
+   CRUD
+========================= */
+
+.crud-seccion{
+    display:none;
+}
+
+.activo{
+    display:block;
+}
+
+.caja{
+    background:#ffffff;
+    border-radius:20px;
+    padding:25px;
+    margin-bottom:30px;
+    box-shadow:0 10px 20px rgba(0,0,0,.1);
+}
+
+.titulo-seccion{
+    color:#1976e6;
+    font-size:35px;
+    font-weight:bold;
+}
+
+/* =========================
+   TARJETA MASCOTA
+========================= */
+
+.mascota{
+    background:#ffffff;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 10px 20px rgba(0,0,0,.1);
+}
+
+.encabezado-mascota{
+    background:#1976e6;
+    color:#ffffff;
+    font-size:60px;
+    text-align:center;
+    padding:25px;
+}
+
+.datos{
+    padding:25px;
+}
+
+.datos h3{
+    font-size:30px;
+    font-weight:bold;
+}
+
+/* =========================
+   CRUD GENERAL
+========================= */
+
+.crud{
+    background:#ffffff;
+    border-radius:20px;
+    padding:25px;
+    box-shadow:0 10px 20px rgba(0,0,0,.1);
+}
+
+.crud h3{
+    font-size:28px;
+    font-weight:bold;
+}
+
+/* =========================
+   SERVICIOS
+========================= */
+
+.servicio{
+    background:#ffffff;
+    border-radius:20px;
+    padding:25px;
+    box-shadow:0 10px 20px rgba(0,0,0,.1);
+}
+
+.servicio h3{
+    font-size:28px;
+    font-weight:bold;
+}
+
+/* =========================
+   ESTADOS
+========================= */
+
+.estado{
+    display:inline-block;
+    padding:8px 14px;
+    border-radius:20px;
+    font-size:14px;
+    font-weight:bold;
+}
+
+.estado.blue{
+    background:#dbeafe;
+    color:#2563eb;
+}
+
+.estado.green{
+    background:#dcfce7;
+    color:#16a34a;
+}
+
+.estado.yellow{
+    background:#fef3c7;
+    color:#ca8a04;
+}
+.bg-light{
+
+background:#eef6ff !important;
+
+}
+
+.bg-light img{
+
+border-radius:20px;
+box-shadow:0 10px 25px rgba(0,0,0,.12);
+
+}
+
+.bg-light p{
+
+font-size:18px;
+line-height:1.8;
+
+}
+.btn{
+
+border-radius:12px;
+
+}
+/*=====================================
+LOGIN - REGISTRO - FORMULARIOS
+======================================*/
+
+.fondo{
+
+    background:#eef5fb;
+    min-height:100vh;
+    padding:30px 0;
+
+}
+
+.formulario{
+
+    background:#ffffff;
+    max-width:750px;
+    margin:auto;
+    border-radius:20px;
+    padding:35px;
+    box-shadow:0 10px 25px rgba(0,0,0,.12);
+
+}
+
+.titulo-formulario{
+
+    color:#1976e6;
+    font-size:34px;
+    font-weight:bold;
+    margin-bottom:10px;
+
+}
+
+.formulario p{
+
+    color:#6b7280;
+
+}
+
+.volver{
+
+    background:#ffffff;
+    border-radius:12px;
+    padding:10px 20px;
+    border:1px solid #dbe4ee;
+    font-weight:bold;
+
+}
+
+.volver:hover{
+
+    background:#1976e6;
+    color:white;
+
+}
+
+.mensaje{
+
+    background:#eef6ff;
+    border-left:5px solid #1976e6;
+    border-radius:12px;
+    padding:15px;
+    margin-bottom:25px;
+
+}
+
+.enlace{
+
+    color:#1976e6;
+    font-weight:bold;
+    text-decoration:none;
+
+}
+
+.enlace:hover{
+
+    text-decoration:underline;
+
+}
+
+/*==========================
+INPUTS
+==========================*/
+
+.form-control{
+
+    border-radius:12px;
+    padding:12px;
+    border:1px solid #ced4da;
+    box-shadow:none;
+
+}
+
+.form-control:focus{
+
+    border-color:#1976e6;
+    box-shadow:0 0 0 .15rem rgba(25,118,230,.2);
+
+}
+
+.form-select{
+
+    border-radius:12px;
+    padding:12px;
+    border:1px solid #ced4da;
+
+}
+
+.form-select:focus{
+
+    border-color:#1976e6;
+    box-shadow:0 0 0 .15rem rgba(25,118,230,.2);
+
+}
+
+textarea.form-control{
+
+    resize:none;
+
+}
+
+/*==========================
+LABELS
+==========================*/
+
+.form-label{
+
+    font-weight:bold;
+    color:#374151;
+    margin-bottom:8px;
+
+}
+
+/*==========================
+CHECKBOX
+==========================*/
+
+.form-check-input{
+
+    cursor:pointer;
+
+}
+
+.form-check-label{
+
+    cursor:pointer;
+
+}
+
+/*==========================
+BOTONES FORMULARIOS
+==========================*/
+
+.formulario .btn{
+
+    min-width:140px;
+    border-radius:12px;
+    font-weight:bold;
+
+}
+
+.btn-secondary{
+
+    background:#6c757d;
+    border:none;
+
+}
+
+.btn-secondary:hover{
+
+    background:#5a6268;
+
+}
+
+/*==========================
+INPUT FILE
+==========================*/
+
+input[type=file]{
+
+    border-radius:12px;
+
+}
+
+/*==========================
+FORMULARIOS MASCOTAS
+==========================*/
+
+.formulario hr{
+
+    margin:25px 0;
+
+}
+
+.formulario strong{
+
+    color:#1976e6;
+
+}
+
+/*==========================
+TARJETAS DE DETALLE
+==========================*/
+
+.formulario p{
+
+    margin-bottom:12px;
+    line-height:1.7;
+
+}
+
+/*==========================
+ESPACIADOS
+==========================*/
+
+.mb-3{
+
+    margin-bottom:18px !important;
+
+}
+
+.mb-4{
+
+    margin-bottom:24px !important;
+
+}
+
+.mt-4{
+
+    margin-top:24px !important;
+
+}
+
+/*==========================
+HOVER BOTONES
+==========================*/
+
+.btn{
+
+    transition:.25s;
+
+}
+
+.btn:hover{
+
+    transform:translateY(-2px);
+
+}
+
+/*==========================
+RESPONSIVE
+==========================*/
+
+@media(max-width:768px){
+
+    .formulario{
+        padding:25px;
+    }
+
+    .titulo-formulario{
+        font-size:28px;
+    }
+
+    .logo-patitas{
+        margin:auto;
+    }
+
+    .formulario .btn{
+        width:100%;
+        margin-top:10px;
+    }
+
+}
+/* ===================================================
+   COMPLEMENTOS PARA FORMULARIOS DENTRO DEL DASHBOARD
+=================================================== */
+
+.crud-seccion .formulario {
+    position: relative;
+    max-width: 700px;
+    margin: 20px auto;
+    border: 1px solid #e2e8f0;
+}
+
+/* Botón de cerrar (X) de Bootstrap sincronizado */
+.btn-close {
+    position: absolute;
+    top: 30px;
+    right: 35px;
+    cursor: pointer;
+    background-size: 14px;
+    transition: 0.2s;
+}
+
+.btn-close:hover {
+    transform: scale(1.1);
+}
+
+/* Cajas de lectura tipo Figma para detalles */
+.bg-light.rounded {
+    background-color: #f8fafc !important;
+    border: 1px solid #e2e8f0;
+    padding: 12px;
+    font-size: 15px;
+    color: #334155;
+}
